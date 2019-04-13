@@ -8,6 +8,7 @@ def quick_summary(df):
     print(df.dtypes)
     print('nulls per col:')
     print(df.isnull().sum())
+    print('memory mb:', df.memory_usage().sum() / 1024 / 1024)
 
 def split_xy(df, target):
     y = df[target]
