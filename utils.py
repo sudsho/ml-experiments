@@ -8,9 +8,14 @@ def quick_summary(df):
     print(df.dtypes)
     print('nulls per col:')
     print(df.isnull().sum())
-    print('memory mb:', df.memory_usage().sum() / 1024 / 1024)
+    print('memory mb:', df.memory_usage(deep=True).sum() / 1024 / 1024)
 
 def split_xy(df, target):
     y = df[target]
     X = df.drop(columns=[target])
     return X, y
+
+def value_counts_pct(s):
+    out = pd.concat([s.value_counts(), s.value_counts(normalize=True).round(3)], axis=1)
+    out.columns = ['n', 'pct']
+    return out
