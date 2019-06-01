@@ -10,6 +10,9 @@ my scratch ML notebooks. working through textbook stuff and kaggle warmups.
 - iris-classifier-comparison.ipynb - LR/DT/RF/SVM on iris
 - titanic-feature-engineering.ipynb - kaggle titanic feature work
 - boston-housing-regression.ipynb - linear/ridge/rf on boston
+- mnist-sklearn-digits.ipynb - load_digits classification
+- breast-cancer-diagnosis.ipynb - binary, scaled pipeline + ROC
+- cross-validation-strategies.ipynb - KFold vs StratifiedKFold
 
 ## scripts
 - utils.py - small data helpers
