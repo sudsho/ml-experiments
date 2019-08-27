@@ -19,3 +19,11 @@ def value_counts_pct(s):
     out = pd.concat([s.value_counts(), s.value_counts(normalize=True).round(3)], axis=1)
     out.columns = ['n', 'pct']
     return out
+
+def reduce_mem(df):
+    """downcast numerics where safe."""
+    for c in df.select_dtypes(include=['int64']).columns:
+        df[c] = pd.to_numeric(df[c], downcast='integer')
+    for c in df.select_dtypes(include=['float64']).columns:
+        df[c] = pd.to_numeric(df[c], downcast='float')
+    return df
