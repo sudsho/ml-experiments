@@ -21,9 +21,16 @@ def value_counts_pct(s):
     return out
 
 def reduce_mem(df):
-    """downcast numerics where safe."""
     for c in df.select_dtypes(include=['int64']).columns:
         df[c] = pd.to_numeric(df[c], downcast='integer')
     for c in df.select_dtypes(include=['float64']).columns:
         df[c] = pd.to_numeric(df[c], downcast='float')
     return df
+
+def high_cardinality(df, threshold=50):
+    out = {}
+    for c in df.select_dtypes(include=['object']).columns:
+        n = df[c].nunique()
+        if n > threshold:
+            out[c] = n
+    return out
