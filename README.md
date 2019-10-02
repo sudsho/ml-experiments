@@ -2,6 +2,12 @@
 
 my scratch ML notebooks. working through textbook stuff and kaggle warmups.
 
+## quickstart
+```
+pip install -r requirements.txt
+jupyter notebook
+```
+
 ## notebooks
 - numpy-tricks.ipynb
 - pandas-basics.ipynb
@@ -18,9 +24,9 @@ my scratch ML notebooks. working through textbook stuff and kaggle warmups.
 - categorical-encoding.ipynb
 - decision-tree-vs-random-forest.ipynb
 - feature-scaling-comparison.ipynb
-- gradient-boosting-intro.ipynb - sklearn GB + xgboost
+- gradient-boosting-intro.ipynb
 - pca-and-dim-reduction.ipynb
-- clustering-experiments.ipynb - KMeans/DBSCAN/hierarchical
+- clustering-experiments.ipynb
 - imbalanced-classification-smote.ipynb
 
 ## scripts
@@ -28,5 +34,5 @@ my scratch ML notebooks. working through textbook stuff and kaggle warmups.
 - plotting.py
 
 ## datasets
-- mostly sklearn built-ins (iris, boston, breast_cancer, digits)
+- mostly sklearn built-ins
 - titanic from kaggle (file goes in `data/`, gitignored)
