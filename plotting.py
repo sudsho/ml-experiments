@@ -7,6 +7,7 @@ def init():
     plt.rcParams['figure.figsize'] = (8, 5)
     plt.rcParams['axes.titlesize'] = 14
     plt.rcParams['axes.labelsize'] = 12
+    plt.rcParams['savefig.dpi'] = 120
 
 def confusion(cm, labels):
     fig, ax = plt.subplots()
@@ -21,3 +22,14 @@ def feat_importance(model, names, top=15):
     s = pd.Series(model.feature_importances_, index=names).sort_values()
     s.tail(top).plot.barh()
     return s
+
+def roc(probs_dict, y_true):
+    """plot multiple ROC curves on the same axes; probs_dict = {name: probs}."""
+    from sklearn.metrics import roc_curve, auc
+    fig, ax = plt.subplots()
+    for name, p in probs_dict.items():
+        f, t, _ = roc_curve(y_true, p)
+        ax.plot(f, t, label=f'{name} AUC={auc(f,t):.3f}')
+    ax.plot([0,1],[0,1], 'k--')
+    ax.legend()
+    return ax
