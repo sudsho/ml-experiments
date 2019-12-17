@@ -9,29 +9,40 @@ jupyter notebook
 ```
 
 ## notebooks
+### basics
 - numpy-tricks.ipynb
 - pandas-basics.ipynb
 - matplotlib-practice.ipynb
 - seaborn-eda.ipynb
-- iris-classifier-comparison.ipynb
+
+### classification
+- iris-classifier-comparison.ipynb - LR/DT/RF/SVM
 - titanic-feature-engineering.ipynb
-- boston-housing-regression.ipynb
 - mnist-sklearn-digits.ipynb
 - breast-cancer-diagnosis.ipynb
-- cross-validation-strategies.ipynb
-- pipeline-and-gridsearch.ipynb
-- handling-missing-data.ipynb
-- categorical-encoding.ipynb
 - decision-tree-vs-random-forest.ipynb
-- feature-scaling-comparison.ipynb
 - gradient-boosting-intro.ipynb
-- pca-and-dim-reduction.ipynb
-- clustering-experiments.ipynb
 - imbalanced-classification-smote.ipynb
 
+### regression
+- boston-housing-regression.ipynb
+
+### preprocessing
+- handling-missing-data.ipynb
+- categorical-encoding.ipynb
+- feature-scaling-comparison.ipynb
+
+### model selection
+- cross-validation-strategies.ipynb
+- pipeline-and-gridsearch.ipynb
+
+### unsupervised
+- pca-and-dim-reduction.ipynb
+- clustering-experiments.ipynb
+
 ## scripts
-- utils.py
-- plotting.py
+- utils.py - small data helpers
+- plotting.py - mpl/seaborn helpers
 
 ## datasets
 - mostly sklearn built-ins
