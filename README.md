@@ -11,6 +11,7 @@ jupyter notebook
 ## notebooks
 ### basics
 - numpy-tricks.ipynb
+- pandas-1.0-features.ipynb (jan 2020 features)
 - pandas-basics.ipynb
 - matplotlib-practice.ipynb
 - seaborn-eda.ipynb
