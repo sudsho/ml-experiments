@@ -1,6 +1,6 @@
 # ml-experiments
 
-my scratch ML notebooks. working through textbook stuff and kaggle warmups.
+my scratch ML notebooks. textbook stuff, kaggle warmups, and now starting on deep learning.
 
 ## quickstart
 ```
