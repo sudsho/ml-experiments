@@ -2,6 +2,8 @@
 
 my scratch ML notebooks. textbook stuff, kaggle warmups, and now starting on deep learning.
 
+still learning publicly. notebooks evolve as I figure things out.
+
 ## quickstart
 ```
 pip install -r requirements.txt
