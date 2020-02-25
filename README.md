@@ -50,3 +50,6 @@ jupyter notebook
 ## datasets
 - mostly sklearn built-ins
 - titanic from kaggle (file goes in `data/`, gitignored)
+
+## kaggle
+- kaggle-titanic-leaderboard-attempt.ipynb
