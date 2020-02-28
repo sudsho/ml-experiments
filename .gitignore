@@ -19,3 +19,5 @@ mlruns/
 wandb/
 data/mnist/
 data/cifar/
+data/titanic/
+data/house-prices/
