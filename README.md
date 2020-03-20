@@ -4,6 +4,8 @@ my scratch ML notebooks. textbook stuff, kaggle warmups, and now starting on dee
 
 still learning publicly. notebooks evolve as I figure things out.
 
+**2020 pivot**: starting with pytorch + tensorflow 2 + more competitive kaggle.
+
 ## quickstart
 ```
 pip install -r requirements.txt
