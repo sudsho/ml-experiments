@@ -55,3 +55,7 @@ jupyter notebook
 
 ## kaggle
 - kaggle-titanic-leaderboard-attempt.ipynb
+
+## deep learning (2020 pivot)
+- pytorch-intro.ipynb
+- pytorch-mnist-cnn.ipynb
