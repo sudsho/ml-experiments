@@ -34,3 +34,12 @@ def high_cardinality(df, threshold=50):
         if n > threshold:
             out[c] = n
     return out
+
+
+
+def to_device(batch, dev):
+    return [b.to(dev) for b in batch]
+
+
+def count_params(model):
+    return sum(p.numel() for p in model.parameters() if p.requires_grad)
