@@ -21,3 +21,4 @@ data/mnist/
 data/cifar/
 data/titanic/
 data/house-prices/
+mnist_cnn.pt
