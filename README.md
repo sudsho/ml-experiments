@@ -59,3 +59,6 @@ jupyter notebook
 ## deep learning (2020 pivot)
 - pytorch-intro.ipynb
 - pytorch-mnist-cnn.ipynb
+- pytorch-cifar-resnet.ipynb
+- tensorflow-2-quickstart.ipynb
+- keras-vs-pytorch.ipynb
