@@ -1,6 +1,8 @@
 # ml-experiments
 
-my scratch ML notebooks. textbook stuff, kaggle warmups, and now starting on deep learning.
+my scratch ML notebooks. textbook stuff -> kaggle warmups -> deep learning.
+
+updates roughly weekly. nothing here is final.
 
 still learning publicly. notebooks evolve as I figure things out.
 
