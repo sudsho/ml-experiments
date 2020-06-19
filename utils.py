@@ -43,3 +43,9 @@ def to_device(batch, dev):
 
 def count_params(model):
     return sum(p.numel() for p in model.parameters() if p.requires_grad)
+
+
+
+def best_trial_summary(study):
+    t = study.best_trial
+    return {'value': t.value, 'params': t.params, 'number': t.number}
