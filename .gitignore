@@ -24,3 +24,4 @@ data/house-prices/
 mnist_cnn.pt
 models/
 submission*.csv
+cifar_resnet18.pt
