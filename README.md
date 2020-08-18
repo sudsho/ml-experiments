@@ -64,3 +64,7 @@ jupyter notebook
 - pytorch-cifar-resnet.ipynb
 - tensorflow-2-quickstart.ipynb
 - keras-vs-pytorch.ipynb
+
+## halfway through 2020
+main thing i learned so far: tuning matters more than model choice for the small kaggle stuff.
+explicit pytorch loops are surprisingly readable once you write a few.
