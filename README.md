@@ -68,3 +68,8 @@ jupyter notebook
 ## halfway through 2020
 main thing i learned so far: tuning matters more than model choice for the small kaggle stuff.
 explicit pytorch loops are surprisingly readable once you write a few.
+
+## nlp / embeddings
+- imdb-sentiment-rnn.ipynb
+- word2vec-from-scratch.ipynb
+- glove-embeddings.ipynb
