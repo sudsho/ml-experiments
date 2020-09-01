@@ -49,3 +49,9 @@ def count_params(model):
 def best_trial_summary(study):
     t = study.best_trial
     return {'value': t.value, 'params': t.params, 'number': t.number}
+
+
+
+def simple_tokenize(s):
+    import re
+    return [w for w in re.findall(r'[a-z]+', s.lower()) if len(w) > 1]
