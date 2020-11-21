@@ -50,6 +50,7 @@ jupyter notebook
 ## scripts
 - utils.py - small data helpers
 - plotting.py - mpl/seaborn helpers
+- streamlit_demo.py - tiny iris predictor
 
 ## datasets
 - mostly sklearn built-ins
