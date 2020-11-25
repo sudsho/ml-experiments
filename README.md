@@ -79,3 +79,7 @@ explicit pytorch loops are surprisingly readable once you write a few.
 started 2019 mostly sklearn. 2020 was the year I picked up pytorch + tf2,
 did real kaggle attempts, and started caring about hyperparameter search
 and explainability. nothing here is polished, just my working notes.
+
+## causal + ab
+- causal-inference-intro.ipynb
+- bayesian-ab-test.ipynb
