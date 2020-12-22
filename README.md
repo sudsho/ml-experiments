@@ -83,3 +83,6 @@ and explainability. nothing here is polished, just my working notes.
 ## causal + ab
 - causal-inference-intro.ipynb
 - bayesian-ab-test.ipynb
+
+## quick wrap
+going into 2021 with a much better feel for dl + tabular. the gap between sklearn me and torch me has narrowed.
