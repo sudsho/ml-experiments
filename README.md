@@ -86,3 +86,8 @@ and explainability. nothing here is polished, just my working notes.
 
 ## quick wrap
 going into 2021 with a much better feel for dl + tabular. the gap between sklearn me and torch me has narrowed.
+
+## end of 2020 notes
+favorite new tools this year: pytorch, optuna, lightgbm, shap.
+took a while to get comfortable with pytorch but the explicit loop pays off when debugging.
+going into 2021 i want to do a real recsys, more transformers stuff, and finally try fastapi.
