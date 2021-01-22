@@ -91,3 +91,8 @@ going into 2021 with a much better feel for dl + tabular. the gap between sklear
 favorite new tools this year: pytorch, optuna, lightgbm, shap.
 took a while to get comfortable with pytorch but the explicit loop pays off when debugging.
 going into 2021 i want to do a real recsys, more transformers stuff, and finally try fastapi.
+
+## 2021 progress
+newer 2021 notebooks (deeper dl + experiment tracking):
+- pytorch-lightning-intro.ipynb
+- tensorboard-experiment-tracking.ipynb
