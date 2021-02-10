@@ -16,3 +16,4 @@ pymc3==3.9.3
 arviz>=0.10
 streamlit==0.71.0
 dowhy==0.5
+pytorch-lightning==1.4.0
