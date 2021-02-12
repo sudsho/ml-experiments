@@ -55,3 +55,6 @@ def best_trial_summary(study):
 def simple_tokenize(s):
     import re
     return [w for w in re.findall(r'[a-z]+', s.lower()) if len(w) > 1]
+
+def onehot_safe(s):
+    return pd.get_dummies(s, dummy_na=True)
