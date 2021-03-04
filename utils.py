@@ -58,3 +58,9 @@ def simple_tokenize(s):
 
 def onehot_safe(s):
     return pd.get_dummies(s, dummy_na=True)
+
+def set_seed(seed=42):
+    import random as _r
+    import numpy as _np
+    import torch as _t
+    _r.seed(seed); _np.random.seed(seed); _t.manual_seed(seed)
