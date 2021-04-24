@@ -64,3 +64,7 @@ def set_seed(seed=42):
     import numpy as _np
     import torch as _t
     _r.seed(seed); _np.random.seed(seed); _t.manual_seed(seed)
+
+def now_str():
+    from datetime import datetime
+    return datetime.now().strftime('%Y%m%d_%H%M%S')
