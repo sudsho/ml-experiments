@@ -68,3 +68,7 @@ def set_seed(seed=42):
 def now_str():
     from datetime import datetime
     return datetime.now().strftime('%Y%m%d_%H%M%S')
+
+def list_files(path, ext='.csv'):
+    from pathlib import Path
+    return [p for p in Path(path).rglob(f'*{ext}')]
