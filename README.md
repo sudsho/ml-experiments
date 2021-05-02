@@ -92,7 +92,12 @@ favorite new tools this year: pytorch, optuna, lightgbm, shap.
 took a while to get comfortable with pytorch but the explicit loop pays off when debugging.
 going into 2021 i want to do a real recsys, more transformers stuff, and finally try fastapi.
 
+
 ## 2021 progress
 newer 2021 notebooks (deeper dl + experiment tracking):
-- pytorch-lightning-intro.ipynb
-- tensorboard-experiment-tracking.ipynb
+- albumentations-augmentations.ipynb
+- weights-and-biases-intro.ipynb
+- huggingface-datasets-explore.ipynb
+- huggingface-transformers-intro.ipynb
+- mlflow-tracking-walkthrough.ipynb
+- bert-finetune-imdb.ipynb
