@@ -17,3 +17,4 @@ arviz>=0.10
 streamlit==0.71.0
 dowhy==0.5
 pytorch-lightning==1.4.0
+transformers==4.10.0
