@@ -95,9 +95,9 @@ going into 2021 i want to do a real recsys, more transformers stuff, and finally
 
 ## 2021 progress
 newer 2021 notebooks (deeper dl + experiment tracking):
-- weights-and-biases-intro.ipynb
-- huggingface-datasets-explore.ipynb
-- huggingface-transformers-intro.ipynb
 - mlflow-tracking-walkthrough.ipynb
 - bert-finetune-imdb.ipynb
 - timm-models-comparison.ipynb
+- vision-transformer-intro.ipynb
+- captum-explainability.ipynb
+- pytorch-quantization.ipynb
