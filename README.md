@@ -95,9 +95,9 @@ going into 2021 i want to do a real recsys, more transformers stuff, and finally
 
 ## 2021 progress
 newer 2021 notebooks (deeper dl + experiment tracking):
-- bert-finetune-imdb.ipynb
-- timm-models-comparison.ipynb
-- vision-transformer-intro.ipynb
 - captum-explainability.ipynb
 - pytorch-quantization.ipynb
 - onnx-export-and-runtime.ipynb
+- ray-tune-hyperparameter.ipynb
+- gradio-intro.ipynb
+- dvc-data-versioning.ipynb
