@@ -72,3 +72,12 @@ def now_str():
 def list_files(path, ext='.csv'):
     from pathlib import Path
     return [p for p in Path(path).rglob(f'*{ext}')]
+
+
+def freeze_layers(model, until_name=None):
+    """freeze model params up to (and including) until_name. used for finetuning."""
+    frozen = True
+    for n, p in model.named_parameters():
+        p.requires_grad = not frozen
+        if until_name is not None and until_name in n:
+            frozen = False
