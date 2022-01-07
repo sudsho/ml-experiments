@@ -81,3 +81,11 @@ def freeze_layers(model, until_name=None):
         p.requires_grad = not frozen
         if until_name is not None and until_name in n:
             frozen = False
+
+
+def cosine_warmup(step, warmup, total, base_lr=1e-3):
+    import math
+    if step < warmup:
+        return base_lr * step / max(1, warmup)
+    progress = (step - warmup) / max(1, total - warmup)
+    return base_lr * 0.5 * (1 + math.cos(math.pi * progress))
