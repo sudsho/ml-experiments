@@ -101,3 +101,5 @@ newer 2021 notebooks (deeper dl + experiment tracking):
 - ray-tune-hyperparameter.ipynb
 - gradio-intro.ipynb
 - dvc-data-versioning.ipynb
+
+bentoml vs fastapi: both are fine, depends on team comfort.
