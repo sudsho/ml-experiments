@@ -105,3 +105,5 @@ newer 2021 notebooks (deeper dl + experiment tracking):
 bentoml vs fastapi: both are fine, depends on team comfort.
 
 pydantic v2 notebook is preview only, not for production.
+
+for accelerate notebook you need `accelerate config` first.
