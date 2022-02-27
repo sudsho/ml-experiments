@@ -107,3 +107,5 @@ bentoml vs fastapi: both are fine, depends on team comfort.
 pydantic v2 notebook is preview only, not for production.
 
 for accelerate notebook you need `accelerate config` first.
+
+the triton quickstart notebook expects an nvidia gpu in docker.
