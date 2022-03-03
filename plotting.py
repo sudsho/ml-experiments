@@ -33,3 +33,16 @@ def roc(probs_dict, y_true):
     ax.plot([0,1],[0,1], 'k--')
     ax.legend()
     return ax
+
+
+def confusion_heatmap(y_true, y_pred, labels=None):
+    import matplotlib.pyplot as plt
+    from sklearn.metrics import confusion_matrix
+    cm = confusion_matrix(y_true, y_pred, labels=labels)
+    fig, ax = plt.subplots()
+    ax.imshow(cm)
+    ax.set_xlabel('pred'); ax.set_ylabel('true')
+    for i in range(cm.shape[0]):
+        for j in range(cm.shape[1]):
+            ax.text(j, i, cm[i, j], ha='center', va='center')
+    return fig
