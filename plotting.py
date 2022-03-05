@@ -46,3 +46,10 @@ def confusion_heatmap(y_true, y_pred, labels=None):
         for j in range(cm.shape[1]):
             ax.text(j, i, cm[i, j], ha='center', va='center')
     return fig
+
+
+def plot_hist_compare(a, b, bins=40, labels=('a', 'b')):
+    import matplotlib.pyplot as plt
+    plt.hist(a, bins=bins, alpha=0.5, label=labels[0])
+    plt.hist(b, bins=bins, alpha=0.5, label=labels[1])
+    plt.legend()
