@@ -111,3 +111,5 @@ for accelerate notebook you need `accelerate config` first.
 the triton quickstart notebook expects an nvidia gpu in docker.
 
 bentoml vs fastapi: both are fine, depends on team comfort.
+
+run `pip install -r requirements.txt` after each pull, deps drift fast this year.
