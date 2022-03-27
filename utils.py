@@ -89,3 +89,10 @@ def cosine_warmup(step, warmup, total, base_lr=1e-3):
         return base_lr * step / max(1, warmup)
     progress = (step - warmup) / max(1, total - warmup)
     return base_lr * 0.5 * (1 + math.cos(math.pi * progress))
+
+
+def to_jsonl(rows, path):
+    import json
+    with open(path, 'w', encoding='utf-8') as f:
+        for r in rows:
+            f.write(json.dumps(r) + '\n')
