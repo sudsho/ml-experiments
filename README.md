@@ -116,3 +116,5 @@ run `pip install -r requirements.txt` after each pull, deps drift fast this year
 
 
 the triton quickstart notebook expects an nvidia gpu in docker.
+
+stable diffusion prompts notebook is api-only, no training.
