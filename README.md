@@ -120,3 +120,5 @@ the triton quickstart notebook expects an nvidia gpu in docker.
 stable diffusion prompts notebook is api-only, no training.
 
 note: switched a few notebooks to torch 1.12, will update the rest as i go.
+
+note: switched a few notebooks to torch 1.12, will update the rest as i go.
