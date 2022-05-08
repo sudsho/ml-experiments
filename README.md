@@ -122,3 +122,5 @@ stable diffusion prompts notebook is api-only, no training.
 note: switched a few notebooks to torch 1.12, will update the rest as i go.
 
 note: switched a few notebooks to torch 1.12, will update the rest as i go.
+
+for 2022 the focus shifts more to inference + serving than training tricks.
