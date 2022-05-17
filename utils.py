@@ -96,3 +96,7 @@ def to_jsonl(rows, path):
     with open(path, 'w', encoding='utf-8') as f:
         for r in rows:
             f.write(json.dumps(r) + '\n')
+
+
+def safe_div(a, b, default=0.0):
+    return a / b if b else default
