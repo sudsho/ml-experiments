@@ -100,3 +100,7 @@ def to_jsonl(rows, path):
 
 def safe_div(a, b, default=0.0):
     return a / b if b else default
+
+
+def dict_diff(a, b):
+    return {k: (a.get(k), b.get(k)) for k in set(a) | set(b) if a.get(k) != b.get(k)}
