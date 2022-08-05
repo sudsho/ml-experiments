@@ -108,3 +108,8 @@ def dict_diff(a, b):
 
 def dict_diff(a, b):
     return {k: (a.get(k), b.get(k)) for k in set(a) | set(b) if a.get(k) != b.get(k)}
+
+
+def chunked(seq, n):
+    for i in range(0, len(seq), n):
+        yield seq[i:i+n]
