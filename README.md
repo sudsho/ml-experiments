@@ -134,3 +134,5 @@ pydantic v2 notebook is preview only, not for production.
 stable diffusion prompts notebook is api-only, no training.
 
 added a few diffusion notebooks. nothing trained from scratch yet.
+
+pydantic v2 notebook is preview only, not for production.
