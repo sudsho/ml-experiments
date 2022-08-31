@@ -27,3 +27,4 @@ openai-whisper==20230314
 fairlearn==0.7.0
 accelerate==0.12.0
 diffusers==0.4.1
+bentoml==1.0.5
