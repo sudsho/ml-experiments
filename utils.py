@@ -113,3 +113,9 @@ def dict_diff(a, b):
 def chunked(seq, n):
     for i in range(0, len(seq), n):
         yield seq[i:i+n]
+
+
+def topk_acc(logits, y, k=5):
+    import torch
+    _, idx = logits.topk(k, dim=-1)
+    return (idx == y.unsqueeze(-1)).any(dim=-1).float().mean().item()
