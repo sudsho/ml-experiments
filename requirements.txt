@@ -29,3 +29,4 @@ accelerate==0.12.0
 diffusers==0.4.1
 bentoml==1.0.5
 pydantic==1.10.0
+torch==1.12.0
