@@ -119,3 +119,7 @@ def topk_acc(logits, y, k=5):
     import torch
     _, idx = logits.topk(k, dim=-1)
     return (idx == y.unsqueeze(-1)).any(dim=-1).float().mean().item()
+
+
+def dict_diff(a, b):
+    return {k: (a.get(k), b.get(k)) for k in set(a) | set(b) if a.get(k) != b.get(k)}
