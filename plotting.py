@@ -53,3 +53,16 @@ def plot_hist_compare(a, b, bins=40, labels=('a', 'b')):
     plt.hist(a, bins=bins, alpha=0.5, label=labels[0])
     plt.hist(b, bins=bins, alpha=0.5, label=labels[1])
     plt.legend()
+
+
+def confusion_heatmap(y_true, y_pred, labels=None):
+    import matplotlib.pyplot as plt
+    from sklearn.metrics import confusion_matrix
+    cm = confusion_matrix(y_true, y_pred, labels=labels)
+    fig, ax = plt.subplots()
+    ax.imshow(cm)
+    ax.set_xlabel('pred'); ax.set_ylabel('true')
+    for i in range(cm.shape[0]):
+        for j in range(cm.shape[1]):
+            ax.text(j, i, cm[i, j], ha='center', va='center')
+    return fig
