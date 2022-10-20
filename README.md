@@ -138,3 +138,5 @@ added a few diffusion notebooks. nothing trained from scratch yet.
 pydantic v2 notebook is preview only, not for production.
 
 for 2022 the focus shifts more to inference + serving than training tricks.
+
+todo: clean up the imports in older 2020 notebooks. some were torch 1.6 style.
