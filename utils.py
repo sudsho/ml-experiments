@@ -123,3 +123,7 @@ def topk_acc(logits, y, k=5):
 
 def dict_diff(a, b):
     return {k: (a.get(k), b.get(k)) for k in set(a) | set(b) if a.get(k) != b.get(k)}
+
+
+def dict_diff(a, b):
+    return {k: (a.get(k), b.get(k)) for k in set(a) | set(b) if a.get(k) != b.get(k)}
