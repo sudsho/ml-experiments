@@ -66,3 +66,13 @@ def confusion_heatmap(y_true, y_pred, labels=None):
         for j in range(cm.shape[1]):
             ax.text(j, i, cm[i, j], ha='center', va='center')
     return fig
+
+
+def plot_loss(history, title='loss'):
+    import matplotlib.pyplot as plt
+    plt.figure()
+    if 'train' in history:
+        plt.plot(history['train'], label='train')
+    if 'val' in history:
+        plt.plot(history['val'], label='val')
+    plt.legend(); plt.title(title); plt.xlabel('step'); plt.ylabel('loss')
