@@ -1,12 +1,14 @@
 # ml-experiments
 
-my scratch ML notebooks. textbook stuff -> kaggle warmups -> deep learning.
+my scratch ML notebooks. textbook stuff -> kaggle warmups -> deep learning -> diffusion + serving.
 
 updates roughly weekly. nothing here is final.
 
 still learning publicly. notebooks evolve as I figure things out.
 
-**2020 pivot**: starting with pytorch + tensorflow 2 + more competitive kaggle.
+**2020 pivot**: pytorch + tensorflow 2 + competitive kaggle.
+**2021 pivot**: experiment tracking, lightning, transformers, more inference work.
+**2022 pivot**: diffusion + accelerate + serving stacks (bentoml, triton, fastapi+redis).
 
 ## quickstart
 ```
@@ -58,6 +60,7 @@ jupyter notebook
 
 ## kaggle
 - kaggle-titanic-leaderboard-attempt.ipynb
+- kaggle-house-prices-attempt.ipynb
 
 ## deep learning (2020 pivot)
 - pytorch-intro.ipynb
@@ -76,9 +79,7 @@ explicit pytorch loops are surprisingly readable once you write a few.
 - glove-embeddings.ipynb
 
 ## skill arc
-started 2019 mostly sklearn. 2020 was the year I picked up pytorch + tf2,
-did real kaggle attempts, and started caring about hyperparameter search
-and explainability. nothing here is polished, just my working notes.
+started 2019 mostly sklearn. 2020 picked up pytorch + tf2, real kaggle attempts, started caring about hyperparam search and explainability. 2021 was experiment tracking, lightning, transformers, captum, quantization. 2022 added diffusion + a real serving stack. nothing here is polished, just working notes.
 
 ## causal + ab
 - causal-inference-intro.ipynb
@@ -101,44 +102,58 @@ newer 2021 notebooks (deeper dl + experiment tracking):
 - ray-tune-hyperparameter.ipynb
 - gradio-intro.ipynb
 - dvc-data-versioning.ipynb
+- pytorch-lightning-intro.ipynb
+- transformer-from-scratch-tiny.ipynb
+- vision-transformer-intro.ipynb
+- huggingface-transformers-intro.ipynb
+- huggingface-datasets-explore.ipynb
+- bert-finetune-imdb.ipynb
+- attention-from-scratch.ipynb
+- mlflow-tracking-walkthrough.ipynb
+- weights-and-biases-intro.ipynb
+- albumentations-augmentations.ipynb
+- timm-models-comparison.ipynb
+- great-expectations-data-quality.ipynb
+- pytest-fixtures-for-ml.ipynb
+- cnn-from-scratch-numpy.ipynb
 
-bentoml vs fastapi: both are fine, depends on team comfort.
+## 2022 progress
+the year of inference + serving for me. lots of post-training engineering, less from-scratch training (already covered that in 2021).
 
-pydantic v2 notebook is preview only, not for production.
+### diffusion
+- diffusion-models-intro-ddpm.ipynb (forward / reverse on 2d toy data, no unet)
+- stable-diffusion-prompts.ipynb (api / inference, no training)
 
-for accelerate notebook you need `accelerate config` first.
+### llm + prompting (early)
+- prompt-engineering-baseline.ipynb (zero-shot, few-shot, cot, role priming)
+- in-context-learning-mini.ipynb
+- whisper-transcription-quickstart.ipynb (sept 2022 release)
 
-the triton quickstart notebook expects an nvidia gpu in docker.
+### serving / inference
+- onnx-runtime-vs-pytorch.ipynb
+- triton-inference-server-quickstart.ipynb
+- bentoml-vs-fastapi-serve.ipynb
+- fastapi-async-with-redis.ipynb
+- streamlit-multipage-app.ipynb (1.10+ multipage)
 
-bentoml vs fastapi: both are fine, depends on team comfort.
+### training infra
+- pytorch-1.12-features.ipynb
+- huggingface-accelerate-distributed.ipynb
+- jax-vs-pytorch-microbench.ipynb
 
-run `pip install -r requirements.txt` after each pull, deps drift fast this year.
+### ml ops + ci/cd
+- mlflow-model-registry.ipynb (deeper than 2021 walkthrough)
+- dvc-cml-cml-runners.ipynb (cml 0.2+, ci for ml)
 
+### responsible ai + tabular
+- fairlearn-disparate-impact.ipynb
+- imbalanced-learn-2022.ipynb
 
-the triton quickstart notebook expects an nvidia gpu in docker.
+### library previews
+- pydantic-2-preview.ipynb (alpha at end of 2022)
 
-stable diffusion prompts notebook is api-only, no training.
-
-note: switched a few notebooks to torch 1.12, will update the rest as i go.
-
-note: switched a few notebooks to torch 1.12, will update the rest as i go.
-
-for 2022 the focus shifts more to inference + serving than training tricks.
-
-note: switched a few notebooks to torch 1.12, will update the rest as i go.
-
-added a few diffusion notebooks. nothing trained from scratch yet.
-
-pydantic v2 notebook is preview only, not for production.
-
-stable diffusion prompts notebook is api-only, no training.
-
-added a few diffusion notebooks. nothing trained from scratch yet.
-
-pydantic v2 notebook is preview only, not for production.
-
-for 2022 the focus shifts more to inference + serving than training tricks.
-
-todo: clean up the imports in older 2020 notebooks. some were torch 1.6 style.
-
-stable diffusion prompts notebook is api-only, no training.
+## end of 2022 notes
+favorite new tools this year: accelerate, diffusers, whisper, bentoml, triton.
+biggest shift: less time on raw training, much more on inference, packaging, and prompts.
+biggest surprise: how much prompt phrasing matters once you start actually measuring agreement on a small holdout.
+going into 2023 i want to do a real rag pipeline, try a vector db, and finetune a small llm.
