@@ -6,7 +6,7 @@ seaborn==0.9.0
 jupyter
 xgboost==0.82
 imbalanced-learn==0.5
-torch==1.6.0
+torch==2.0.0
 torchvision==0.7.0
 tensorflow==2.2.0
 lightgbm==2.3.1
@@ -17,7 +17,7 @@ arviz>=0.10
 streamlit==0.71.0
 dowhy==0.5
 pytorch-lightning==1.4.0
-transformers==4.10.0
+transformers==4.30.0
 datasets==1.12.0
 timm==0.4.12
 mlflow==1.20.0
@@ -29,5 +29,4 @@ accelerate==0.12.0
 diffusers==0.4.1
 bentoml==1.0.5
 pydantic==1.10.0
-torch==1.12.0
 onnxruntime==1.12.1
