@@ -157,3 +157,13 @@ favorite new tools this year: accelerate, diffusers, whisper, bentoml, triton.
 biggest shift: less time on raw training, much more on inference, packaging, and prompts.
 biggest surprise: how much prompt phrasing matters once you start actually measuring agreement on a small holdout.
 going into 2023 i want to do a real rag pipeline, try a vector db, and finetune a small llm.
+
+
+## 2023 progress
+big pivot: most of the year is llms. rag pipelines, vector dbs, function calling, finetuning small models with lora.
+chatgpt blew up around new year so by march most ml friends were already chasing prompts. trying not to skip the basics in the rush.
+
+### llm + rag
+- gpt-from-scratch-tiny-shakespeare.ipynb - karpathy walkthrough
+- prompt-engineering-tricks.ipynb - cot, few-shot, role priming
+- bert-vs-roberta-vs-deberta-comparison.ipynb
