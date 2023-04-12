@@ -167,3 +167,9 @@ chatgpt blew up around new year so by march most ml friends were already chasing
 - gpt-from-scratch-tiny-shakespeare.ipynb - karpathy walkthrough
 - prompt-engineering-tricks.ipynb - cot, few-shot, role priming
 - bert-vs-roberta-vs-deberta-comparison.ipynb
+
+- langchain-quickstart.ipynb
+- langchain-agents-with-tools.ipynb
+- pinecone-vector-db-quickstart.ipynb
+- chromadb-quickstart.ipynb
+- llamaindex-vs-langchain.ipynb
