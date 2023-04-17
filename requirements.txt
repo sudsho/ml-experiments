@@ -30,4 +30,6 @@ diffusers==0.4.1
 bentoml==1.0.5
 pydantic==1.10.0
 onnxruntime==1.12.1
-langchain==0.0.137
+langchain==0.0.158
+chromadb==0.3.21
+pinecone-client==2.2.1
