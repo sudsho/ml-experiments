@@ -173,3 +173,12 @@ chatgpt blew up around new year so by march most ml friends were already chasing
 - pinecone-vector-db-quickstart.ipynb
 - chromadb-quickstart.ipynb
 - llamaindex-vs-langchain.ipynb
+
+### finetuning + quantization
+- peft-lora-quickstart.ipynb
+- bitsandbytes-8bit-loading.ipynb
+- llama2-quantized-inference.ipynb (jul 2023 release)
+
+### apis
+- openai-function-calling.ipynb (jun 2023 release)
+- anthropic-claude-api-quickstart.ipynb
