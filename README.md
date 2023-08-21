@@ -182,3 +182,8 @@ chatgpt blew up around new year so by march most ml friends were already chasing
 ### apis
 - openai-function-calling.ipynb (jun 2023 release)
 - anthropic-claude-api-quickstart.ipynb
+
+### infra / serving for llms
+- pytorch-2-compile-features.ipynb
+- mlflow-llm-tracking.ipynb (mlflow 2.4+ llm features)
+- pydantic-v2-migration.ipynb (jun 2023 release)
