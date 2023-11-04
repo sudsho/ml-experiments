@@ -187,3 +187,9 @@ chatgpt blew up around new year so by march most ml friends were already chasing
 - pytorch-2-compile-features.ipynb
 - mlflow-llm-tracking.ipynb (mlflow 2.4+ llm features)
 - pydantic-v2-migration.ipynb (jun 2023 release)
+
+### sept-onward
+- mistral-7b-quickstart.ipynb (sept 2023)
+- gradio-vs-streamlit-llm-demos.ipynb
+- diffusers-stable-diffusion-prompts.ipynb
+- causal-dml-econml.ipynb (revisiting causal stuff with newer libs)
