@@ -193,3 +193,9 @@ chatgpt blew up around new year so by march most ml friends were already chasing
 - gradio-vs-streamlit-llm-demos.ipynb
 - diffusers-stable-diffusion-prompts.ipynb
 - causal-dml-econml.ipynb (revisiting causal stuff with newer libs)
+
+## end of 2023 notes
+favorite new tools this year: langchain (with reservations), chroma, peft, bitsandbytes, anthropic api.
+biggest shift: less from-scratch, much more wiring. half my notebooks this year are 'how do these libraries fit together'.
+biggest surprise: how badly v0.0.x langchain breaks across minor versions. pinning religiously now.
+going into 2024 i want a real agent loop, more eval rigor (evals, not vibes), and a real multimodal demo.
