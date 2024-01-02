@@ -201,3 +201,5 @@ biggest surprise: how badly v0.0.x langchain breaks across minor versions. pinni
 going into 2024 i want a real agent loop, more eval rigor (evals, not vibes), and a real multimodal demo.
 
 <!-- 2024 progress note 0 -->
+
+<!-- 2024 progress note 1 -->
