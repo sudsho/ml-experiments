@@ -199,3 +199,5 @@ favorite new tools this year: langchain (with reservations), chroma, peft, bitsa
 biggest shift: less from-scratch, much more wiring. half my notebooks this year are 'how do these libraries fit together'.
 biggest surprise: how badly v0.0.x langchain breaks across minor versions. pinning religiously now.
 going into 2024 i want a real agent loop, more eval rigor (evals, not vibes), and a real multimodal demo.
+
+<!-- 2024 progress note 0 -->
