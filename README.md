@@ -215,3 +215,5 @@ going into 2024 i want a real agent loop, more eval rigor (evals, not vibes), an
 <!-- 2024 progress note 6 -->
 
 <!-- 2024 progress note 7 -->
+
+<!-- 2024 progress note 9 -->
