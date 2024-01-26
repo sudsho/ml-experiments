@@ -217,3 +217,6 @@ going into 2024 i want a real agent loop, more eval rigor (evals, not vibes), an
 <!-- 2024 progress note 7 -->
 
 <!-- 2024 progress note 9 -->
+
+## 2024 progress
+the llm year for real. langgraph, dspy, ragas, vllm. less from-scratch, lots more wiring + eval rigor.
