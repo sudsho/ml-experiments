@@ -42,3 +42,4 @@ econml==0.14.1
 modal==0.62.0
 sentence-transformers==3.0.0
 llama-cpp-python==0.2.70
+instructor==1.2.0
