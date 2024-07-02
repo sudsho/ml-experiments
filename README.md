@@ -223,3 +223,6 @@ the llm year for real. langgraph, dspy, ragas, vllm. less from-scratch, lots mor
 
 ### 2024 mid year
 llama 3 + claude 3 changed my defaults. vllm for serving. evals on a real holdout, not vibes.
+
+### 2024 tooling note
+uv replaced pip-tools, ruff replaced black + isort. one-tool stories everywhere.
