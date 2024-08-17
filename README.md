@@ -226,3 +226,6 @@ llama 3 + claude 3 changed my defaults. vllm for serving. evals on a real holdou
 
 ### 2024 tooling note
 uv replaced pip-tools, ruff replaced black + isort. one-tool stories everywhere.
+
+### 2024 quantization note
+gguf q4_k_m for llama.cpp inference. torchao int8 dynamic for pytorch path.
