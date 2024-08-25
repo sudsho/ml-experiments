@@ -229,3 +229,6 @@ uv replaced pip-tools, ruff replaced black + isort. one-tool stories everywhere.
 
 ### 2024 quantization note
 gguf q4_k_m for llama.cpp inference. torchao int8 dynamic for pytorch path.
+
+### 2024 obs
+structured output is solved well enough that i stopped writing json parse retries.
