@@ -232,3 +232,6 @@ gguf q4_k_m for llama.cpp inference. torchao int8 dynamic for pytorch path.
 
 ### 2024 obs
 structured output is solved well enough that i stopped writing json parse retries.
+
+## end of 2024 notes
+favorite new tools: langgraph, ragas, vllm, instructor, uv. biggest shift: agents that survive an exception. going into 2025: a real multi-modal demo and a tiny-model finetune end-to-end.
