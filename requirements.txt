@@ -45,3 +45,4 @@ llama-cpp-python==0.2.70
 instructor==1.2.0
 guidance==0.1.10
 vllm==0.4.2
+uv==0.1.40
