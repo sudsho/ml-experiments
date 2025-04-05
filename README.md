@@ -235,3 +235,15 @@ structured output is solved well enough that i stopped writing json parse retrie
 
 ## end of 2024 notes
 favorite new tools: langgraph, ragas, vllm, instructor, uv. biggest shift: agents that survive an exception. going into 2025: a real multi-modal demo and a tiny-model finetune end-to-end.
+
+## 2025 progress
+the agent + reasoning model year. r1 dropped in jan, reasoning flipped to mainstream. mcp from anthropic took off mid-year.
+
+### early 2025
+- gemini-2-flash-thinking.ipynb (dec 2024 release, tested in jan)
+- deepseek-v3-r1-eval.ipynb (jan 2025, pure rl reasoning)
+- o1-vs-r1-reasoning-models.ipynb
+- claude-3.5-sonnet-vs-haiku.ipynb
+
+
+<!-- 2025 -->
