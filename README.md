@@ -247,3 +247,11 @@ the agent + reasoning model year. r1 dropped in jan, reasoning flipped to mainst
 
 
 <!-- 2025 -->
+
+### 2025 mid year
+mcp servers everywhere. agent frameworks split: agno (minimal), crewai (role play), langgraph (graph state). pydantic-ai is the typed alternative to all of them.
+
+llama 3.3 caught up to qwen 2.5 on multilingual. eagle-2 made speculative decoding actually worth wiring in.
+
+
+<!-- 2025 mid -->
