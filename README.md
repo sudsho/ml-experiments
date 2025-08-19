@@ -255,3 +255,11 @@ llama 3.3 caught up to qwen 2.5 on multilingual. eagle-2 made speculative decodi
 
 
 <!-- 2025 mid -->
+
+### 2025 q3 notes
+fp8 training on h100 finally felt safe (not just inference). mamba vs transformer on long context: mamba wins on raw tps but loses on retrieval recall.
+
+structured output is now a non-issue. instructor + pydantic-ai cover 95% of cases without retries.
+
+
+<!-- 2025 q3 -->
