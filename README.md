@@ -263,3 +263,12 @@ structured output is now a non-issue. instructor + pydantic-ai cover 95% of case
 
 
 <!-- 2025 q3 -->
+
+## end of 2025 notes
+favorite new tools: mcp, sglang, pydantic-ai, torchao, instructor.
+biggest shift: reasoning models changed how i prompt (less few-shot, more direct).
+biggest surprise: how good qwen 2.5 became open weight. closing gap with claude/gpt for many tasks.
+going into 2026: multi-modal, long-context retrieval that actually works, finetune-as-a-service patterns.
+
+
+<!-- 2025 end -->
