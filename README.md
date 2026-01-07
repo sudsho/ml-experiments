@@ -272,3 +272,6 @@ going into 2026: multi-modal, long-context retrieval that actually works, finetu
 
 
 <!-- 2025 end -->
+
+## 2026 progress
+the multimodal + agentic year. mcp is now table stakes. diffusion llms (llada 2) finally competitive on a few benchmarks.
