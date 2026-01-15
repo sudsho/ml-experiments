@@ -275,3 +275,7 @@ going into 2026: multi-modal, long-context retrieval that actually works, finetu
 
 ## 2026 progress
 the multimodal + agentic year. mcp is now table stakes. diffusion llms (llada 2) finally competitive on a few benchmarks.
+
+### early 2026
+- llama 4 + deepseek v4 traded blows on swe-bench-lite. open weights closing fast.
+- gemini 2.5 pro deep think and claude 3.7 extended thinking made 'think tokens' a budget knob.
