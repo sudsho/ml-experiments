@@ -283,3 +283,6 @@ the multimodal + agentic year. mcp is now table stakes. diffusion llms (llada 2)
 ### 2026 mid year
 agent frameworks consolidating: pydantic-ai + agno cover most cases. langgraph still wins for explicit graph state.
 vllm 0.8 + sglang prefix caching closed the chat-serving gap.
+
+### 2026 q1 wrap
+mcp ecosystem exploded. servers for fs, github, slack, postgres are stable. tool routing is no longer the bottleneck — schema design is.
