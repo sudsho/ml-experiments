@@ -44,7 +44,7 @@ sentence-transformers==3.3.0
 llama-cpp-python==0.3.2
 instructor==1.6.4
 guidance==0.2.0
-vllm==0.7.0
+vllm==0.8.2
 uv==0.5.4
 ragas==0.2.15
 langgraph==0.2.50
