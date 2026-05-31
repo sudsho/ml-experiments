@@ -1,288 +1,49 @@
 # ml-experiments
 
-my scratch ML notebooks. textbook stuff -> kaggle warmups -> deep learning -> diffusion + serving.
+Scratch notebooks I use to try new libraries and warm up on new topics. These are learning notes, not benchmarks. Nothing here is peer reviewed and nothing here should be treated as measured results.
 
-updates roughly weekly. nothing here is final.
-
-still learning publicly. notebooks evolve as I figure things out.
-
-**2020 pivot**: pytorch + tensorflow 2 + competitive kaggle.
-**2021 pivot**: experiment tracking, lightning, transformers, more inference work.
-**2022 pivot**: diffusion + accelerate + serving stacks (bentoml, triton, fastapi+redis).
+Outputs are stripped from most notebooks. Some cells are stubs that just import a library or check a version; the goal was to try the API, not produce a result.
 
 ## quickstart
+
 ```
 pip install -r requirements.txt
 jupyter notebook
 ```
 
-## notebooks
-### basics
-- numpy-tricks.ipynb
-- pandas-1.0-features.ipynb (jan 2020 features)
-- pandas-basics.ipynb
-- matplotlib-practice.ipynb
-- seaborn-eda.ipynb
+Only install the pins for topics you actually want to open. The full requirements set is heavy.
 
-### classification
-- iris-classifier-comparison.ipynb - LR/DT/RF/SVM
-- titanic-feature-engineering.ipynb
-- mnist-sklearn-digits.ipynb
-- breast-cancer-diagnosis.ipynb
-- decision-tree-vs-random-forest.ipynb
-- gradient-boosting-intro.ipynb
-- imbalanced-classification-smote.ipynb
+## what is in here
 
-### regression
-- boston-housing-regression.ipynb
+Rough groups. File names should be self explanatory.
 
-### preprocessing
-- handling-missing-data.ipynb
-- categorical-encoding.ipynb
-- feature-scaling-comparison.ipynb
-
-### model selection
-- cross-validation-strategies.ipynb
-- pipeline-and-gridsearch.ipynb
-
-### unsupervised
-- pca-and-dim-reduction.ipynb
-- clustering-experiments.ipynb
+- classical ML: iris, titanic, breast cancer, boston housing, gradient boosting, decision trees vs random forest, xgboost, lightgbm, imbalanced SMOTE.
+- preprocessing: missing data, categorical encoding, feature scaling.
+- model selection: cross validation, pipeline plus gridsearch, optuna vs gridsearch.
+- unsupervised: PCA, clustering.
+- data / plotting basics: numpy, pandas, matplotlib, seaborn.
+- deep learning: pytorch intro, mnist CNN, cifar resnet, tensorflow 2 quickstart, keras vs pytorch, lightning intro, jax vs pytorch microbench.
+- NLP: word2vec from scratch, glove, imdb sentiment RNN, huggingface transformers intro, bert finetune, attention from scratch, transformer from scratch (tiny), vision transformer intro.
+- serving / infra tries: onnx export, triton quickstart, bentoml vs fastapi, fastapi with redis, streamlit multipage.
+- experiment tracking / MLOps tries: mlflow, wandb, tensorboard, dvc, great expectations, ray tune, captum, pytest fixtures.
+- causal / AB: causal-inference-intro, bayesian AB test, causal-dml-econml.
+- LLM API pokes: openai function calling, anthropic api quickstart, gemini api quickstart, langchain quickstart, langchain agents, chromadb quickstart, pinecone quickstart, llamaindex vs langchain, gguf/llamacpp, bitsandbytes 8 bit, peft LoRA, whisper.
+- pytorch release notes walk throughs: pytorch-1.12, pytorch-2 compile, pytorch-2.3, pytorch-2.5.
+- pydantic / uv / ruff: version bumps as they landed.
 
 ## scripts
-- utils.py - small data helpers
-- plotting.py - mpl/seaborn helpers
-- streamlit_demo.py - tiny iris predictor
+
+- utils.py, plotting.py: small helpers.
+- streamlit_demo.py: tiny iris predictor.
+- tf_serving_test.py: manual smoke script for a local TF serving container.
 
 ## datasets
-- mostly sklearn built-ins
-- titanic from kaggle (file goes in `data/`, gitignored)
 
-## kaggle
-- kaggle-titanic-leaderboard-attempt.ipynb
-- kaggle-house-prices-attempt.ipynb
+Mostly sklearn built ins. Titanic file from kaggle goes in `data/` (gitignored).
 
-## deep learning (2020 pivot)
-- pytorch-intro.ipynb
-- pytorch-mnist-cnn.ipynb
-- pytorch-cifar-resnet.ipynb
-- tensorflow-2-quickstart.ipynb
-- keras-vs-pytorch.ipynb
+## caveats
 
-## halfway through 2020
-main thing i learned so far: tuning matters more than model choice for the small kaggle stuff.
-explicit pytorch loops are surprisingly readable once you write a few.
-
-## nlp / embeddings
-- imdb-sentiment-rnn.ipynb
-- word2vec-from-scratch.ipynb
-- glove-embeddings.ipynb
-
-## skill arc
-started 2019 mostly sklearn. 2020 picked up pytorch + tf2, real kaggle attempts, started caring about hyperparam search and explainability. 2021 was experiment tracking, lightning, transformers, captum, quantization. 2022 added diffusion + a real serving stack. nothing here is polished, just working notes.
-
-## causal + ab
-- causal-inference-intro.ipynb
-- bayesian-ab-test.ipynb
-
-## quick wrap
-going into 2021 with a much better feel for dl + tabular. the gap between sklearn me and torch me has narrowed.
-
-## end of 2020 notes
-favorite new tools this year: pytorch, optuna, lightgbm, shap.
-took a while to get comfortable with pytorch but the explicit loop pays off when debugging.
-going into 2021 i want to do a real recsys, more transformers stuff, and finally try fastapi.
-
-
-## 2021 progress
-newer 2021 notebooks (deeper dl + experiment tracking):
-- captum-explainability.ipynb
-- pytorch-quantization.ipynb
-- onnx-export-and-runtime.ipynb
-- ray-tune-hyperparameter.ipynb
-- gradio-intro.ipynb
-- dvc-data-versioning.ipynb
-- pytorch-lightning-intro.ipynb
-- transformer-from-scratch-tiny.ipynb
-- vision-transformer-intro.ipynb
-- huggingface-transformers-intro.ipynb
-- huggingface-datasets-explore.ipynb
-- bert-finetune-imdb.ipynb
-- attention-from-scratch.ipynb
-- mlflow-tracking-walkthrough.ipynb
-- weights-and-biases-intro.ipynb
-- albumentations-augmentations.ipynb
-- timm-models-comparison.ipynb
-- great-expectations-data-quality.ipynb
-- pytest-fixtures-for-ml.ipynb
-- cnn-from-scratch-numpy.ipynb
-
-## 2022 progress
-the year of inference + serving for me. lots of post-training engineering, less from-scratch training (already covered that in 2021).
-
-### diffusion
-- diffusion-models-intro-ddpm.ipynb (forward / reverse on 2d toy data, no unet)
-- stable-diffusion-prompts.ipynb (api / inference, no training)
-
-### llm + prompting (early)
-- prompt-engineering-baseline.ipynb (zero-shot, few-shot, cot, role priming)
-- in-context-learning-mini.ipynb
-- whisper-transcription-quickstart.ipynb (sept 2022 release)
-
-### serving / inference
-- onnx-runtime-vs-pytorch.ipynb
-- triton-inference-server-quickstart.ipynb
-- bentoml-vs-fastapi-serve.ipynb
-- fastapi-async-with-redis.ipynb
-- streamlit-multipage-app.ipynb (1.10+ multipage)
-
-### training infra
-- pytorch-1.12-features.ipynb
-- huggingface-accelerate-distributed.ipynb
-- jax-vs-pytorch-microbench.ipynb
-
-### ml ops + ci/cd
-- mlflow-model-registry.ipynb (deeper than 2021 walkthrough)
-- dvc-cml-cml-runners.ipynb (cml 0.2+, ci for ml)
-
-### responsible ai + tabular
-- fairlearn-disparate-impact.ipynb
-- imbalanced-learn-2022.ipynb
-
-### library previews
-- pydantic-2-preview.ipynb (alpha at end of 2022)
-
-## end of 2022 notes
-favorite new tools this year: accelerate, diffusers, whisper, bentoml, triton.
-biggest shift: less time on raw training, much more on inference, packaging, and prompts.
-biggest surprise: how much prompt phrasing matters once you start actually measuring agreement on a small holdout.
-going into 2023 i want to do a real rag pipeline, try a vector db, and finetune a small llm.
-
-
-## 2023 progress
-big pivot: most of the year is llms. rag pipelines, vector dbs, function calling, finetuning small models with lora.
-chatgpt blew up around new year so by march most ml friends were already chasing prompts. trying not to skip the basics in the rush.
-
-### llm + rag
-- gpt-from-scratch-tiny-shakespeare.ipynb - karpathy walkthrough
-- prompt-engineering-tricks.ipynb - cot, few-shot, role priming
-- bert-vs-roberta-vs-deberta-comparison.ipynb
-
-- langchain-quickstart.ipynb
-- langchain-agents-with-tools.ipynb
-- pinecone-vector-db-quickstart.ipynb
-- chromadb-quickstart.ipynb
-- llamaindex-vs-langchain.ipynb
-
-### finetuning + quantization
-- peft-lora-quickstart.ipynb
-- bitsandbytes-8bit-loading.ipynb
-- llama2-quantized-inference.ipynb (jul 2023 release)
-
-### apis
-- openai-function-calling.ipynb (jun 2023 release)
-- anthropic-claude-api-quickstart.ipynb
-
-### infra / serving for llms
-- pytorch-2-compile-features.ipynb
-- mlflow-llm-tracking.ipynb (mlflow 2.4+ llm features)
-- pydantic-v2-migration.ipynb (jun 2023 release)
-
-### sept-onward
-- mistral-7b-quickstart.ipynb (sept 2023)
-- gradio-vs-streamlit-llm-demos.ipynb
-- diffusers-stable-diffusion-prompts.ipynb
-- causal-dml-econml.ipynb (revisiting causal stuff with newer libs)
-
-## end of 2023 notes
-favorite new tools this year: langchain (with reservations), chroma, peft, bitsandbytes, anthropic api.
-biggest shift: less from-scratch, much more wiring. half my notebooks this year are 'how do these libraries fit together'.
-biggest surprise: how badly v0.0.x langchain breaks across minor versions. pinning religiously now.
-going into 2024 i want a real agent loop, more eval rigor (evals, not vibes), and a real multimodal demo.
-
-<!-- 2024 progress note 0 -->
-
-<!-- 2024 progress note 1 -->
-
-<!-- 2024 progress note 2 -->
-
-<!-- 2024 progress note 3 -->
-
-<!-- 2024 progress note 4 -->
-
-<!-- 2024 progress note 5 -->
-
-<!-- 2024 progress note 6 -->
-
-<!-- 2024 progress note 7 -->
-
-<!-- 2024 progress note 9 -->
-
-## 2024 progress
-the llm year for real. langgraph, dspy, ragas, vllm. less from-scratch, lots more wiring + eval rigor.
-
-### 2024 mid year
-llama 3 + claude 3 changed my defaults. vllm for serving. evals on a real holdout, not vibes.
-
-### 2024 tooling note
-uv replaced pip-tools, ruff replaced black + isort. one-tool stories everywhere.
-
-### 2024 quantization note
-gguf q4_k_m for llama.cpp inference. torchao int8 dynamic for pytorch path.
-
-### 2024 obs
-structured output is solved well enough that i stopped writing json parse retries.
-
-## end of 2024 notes
-favorite new tools: langgraph, ragas, vllm, instructor, uv. biggest shift: agents that survive an exception. going into 2025: a real multi-modal demo and a tiny-model finetune end-to-end.
-
-## 2025 progress
-the agent + reasoning model year. r1 dropped in jan, reasoning flipped to mainstream. mcp from anthropic took off mid-year.
-
-### early 2025
-- gemini-2-flash-thinking.ipynb (dec 2024 release, tested in jan)
-- deepseek-v3-r1-eval.ipynb (jan 2025, pure rl reasoning)
-- o1-vs-r1-reasoning-models.ipynb
-- claude-3.5-sonnet-vs-haiku.ipynb
-
-
-<!-- 2025 -->
-
-### 2025 mid year
-mcp servers everywhere. agent frameworks split: agno (minimal), crewai (role play), langgraph (graph state). pydantic-ai is the typed alternative to all of them.
-
-llama 3.3 caught up to qwen 2.5 on multilingual. eagle-2 made speculative decoding actually worth wiring in.
-
-
-<!-- 2025 mid -->
-
-### 2025 q3 notes
-fp8 training on h100 finally felt safe (not just inference). mamba vs transformer on long context: mamba wins on raw tps but loses on retrieval recall.
-
-structured output is now a non-issue. instructor + pydantic-ai cover 95% of cases without retries.
-
-
-<!-- 2025 q3 -->
-
-## end of 2025 notes
-favorite new tools: mcp, sglang, pydantic-ai, torchao, instructor.
-biggest shift: reasoning models changed how i prompt (less few-shot, more direct).
-biggest surprise: how good qwen 2.5 became open weight. closing gap with claude/gpt for many tasks.
-going into 2026: multi-modal, long-context retrieval that actually works, finetune-as-a-service patterns.
-
-
-<!-- 2025 end -->
-
-## 2026 progress
-the multimodal + agentic year. mcp is now table stakes. diffusion llms (llada 2) finally competitive on a few benchmarks.
-
-### early 2026
-- llama 4 + deepseek v4 traded blows on swe-bench-lite. open weights closing fast.
-- gemini 2.5 pro deep think and claude 3.7 extended thinking made 'think tokens' a budget knob.
-
-### 2026 mid year
-agent frameworks consolidating: pydantic-ai + agno cover most cases. langgraph still wins for explicit graph state.
-vllm 0.8 + sglang prefix caching closed the chat-serving gap.
-
-### 2026 q1 wrap
-mcp ecosystem exploded. servers for fs, github, slack, postgres are stable. tool routing is no longer the bottleneck - schema design is.
+- No benchmarks. Any numbers inside notebooks are illustrative or scratch, not measured throughput or accuracy on a real run.
+- No CI, no test suite, no run artifacts checked in.
+- Duplicate markdown notes may appear across notebooks. This is a scratch pile, not a curated knowledge base.
+- Library pins in requirements.txt track what I had installed most recently. Older notebooks were written against older versions and may not re run cleanly on the current pins.
