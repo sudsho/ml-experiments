@@ -4,7 +4,78 @@ Scratch notebooks I use to try new libraries and warm up on new topics. These ar
 
 Outputs are stripped from most notebooks. Some cells are stubs that just import a library or check a version; the goal was to try the API, not produce a result.
 
-## quickstart
+## Quick start (runs offline)
+
+A small offline smoke runs two representative experiments end to end on CPU
+with no downloads and no network. Both use sklearn built-in datasets, so there
+is nothing to fetch. Needs numpy, scikit-learn, and pytest only.
+
+```
+make smoke     # or: python scripts/smoke.py
+make test      # or: python -m pytest tests/ -v
+```
+
+Real output from `python scripts/smoke.py`:
+
+```
+============================================================
+ml-experiments offline smoke
+============================================================
+
+[A] iris-classifier-comparison (sklearn load_iris)
+    samples: 150
+    held out accuracy:
+      LR   0.9333
+      DT   0.9333
+      RF   0.9111
+      SVM  0.9778
+    5 fold cross validation mean:
+      LR   0.9733
+      DT   0.9533
+      RF   0.9667
+      SVM  0.9800
+
+[B] breast-cancer-diagnosis (sklearn load_breast_cancer)
+    samples: 569
+    scaled LR held out accuracy: 0.9580
+    scaled LR ROC AUC:           0.9952
+    xgboost 5 fold CV mean:      0.9666
+    classification report:
+                    precision    recall  f1-score   support
+
+         malignant       0.94      0.94      0.94        53
+            benign       0.97      0.97      0.97        90
+
+          accuracy                           0.96       143
+         macro avg       0.96      0.96      0.96       143
+      weighted avg       0.96      0.96      0.96       143
+
+============================================================
+SMOKE OK - both experiments trained and cleared metric floors
+============================================================
+```
+
+And `python -m pytest tests/ -v`:
+
+```
+tests/test_smoke.py::test_iris_experiment_produces_metrics PASSED         [ 50%]
+tests/test_smoke.py::test_breast_cancer_experiment_produces_metrics PASSED [100%]
+2 passed
+```
+
+### what the smoke covers, and what it does not
+
+The smoke covers the two sklearn classical-ML experiments end to end
+(`scripts/smoke.py` extracts the core of `iris-classifier-comparison.ipynb` and
+`breast-cancer-diagnosis.ipynb`). It asserts each experiment trained and cleared
+a metric floor (RF and every CV mean above 0.85 on iris, scaled LR above 0.90
+accuracy and 0.95 ROC AUC on breast cancer). The xgboost comparison runs only if
+xgboost is already importable; the smoke never installs it and skips it cleanly
+if it is missing. It does not touch the deep-learning, LLM-API, or infra
+notebooks, which need heavy pins, GPUs, model downloads, or API keys and are not
+part of the offline path.
+
+## notebook quickstart
 
 ```
 pip install -r requirements.txt
